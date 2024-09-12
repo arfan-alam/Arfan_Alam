@@ -1,0 +1,7 @@
+clinic\Specialist.class
+clinic\GeneralPractitioner.class
+clinic\Clinic.class
+clinic\Patient.class
+clinic\Appointment.class
+clinic\AppointmentManagement.class
+clinic\Doctor.class
