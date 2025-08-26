@@ -1,0 +1,76 @@
+/* Full-page vaccine theme background */
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('vaccination-tracker-php/public/assets/images/vaccine-bg.svg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Overlay for soft tint */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(29, 129, 217, 0.8); /* light healthcare tint */
+    z-index: -1;
+}
+
+/* Login card */
+.login-card {
+    width: 100%;
+    max-width: 420px;
+    background: #3fb5e8;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Title */
+.login-card h1 {
+    color: #00796b;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Vaccine icon */
+.vaccine-icon {
+    font-size: 3rem;
+    color: #388e3c;
+    margin-bottom: 10px;
+}
+
+/* Inputs */
+.form-control {
+    border-radius: 10px;
+    border: 1px solid #b2dfdb;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #388e3c;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+}
+.btn-primary:hover {
+    background-color: #2e7d32;
+}
+
+.btn-link {
+    color: #0288d1;
+}
+.btn-link:hover {
+    color: #01579b;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
