@@ -1,0 +1,164 @@
+/* ================================
+   Global Vaccine Theme
+   ================================ */
+body {
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f9ff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Links */
+a {
+    color: #1d81d9;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.btn-primary {
+    background: #1d81d9;
+    color: #fff;
+}
+.btn-primary:hover {
+    background: #1565c0;
+}
+.btn-success {
+    background: #28a745;
+    color: #fff;
+}
+.btn-success:hover {
+    background: #1f7a33;
+}
+.btn-danger {
+    background: #dc3545;
+    color: #fff;
+}
+.btn-danger:hover {
+    background: #b52a37;
+}
+
+/* Inputs & Forms */
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+input:focus, select:focus, textarea:focus {
+    border-color: #1d81d9;
+    box-shadow: 0 0 5px rgba(29,129,217,0.3);
+}
+
+/* ================================
+   Login & Register
+   ================================ */
+.login-card, .register-card {
+    width: 100%;
+    max-width: 420px;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 30px;
+    margin: 40px auto;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
+}
+.login-card h1, .register-card h1 {
+    color: #12ade5;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.vaccine-icon {
+    font-size: 3rem;
+    color: #28a745;
+    margin-bottom: 15px;
+}
+
+/* ================================
+   Dashboard (Admin, Healthcare, Patient)
+   ================================ */
+.dashboard-container {
+    padding: 30px;
+}
+.card {
+    background: #08a1b5;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.2s;
+}
+.card:hover {
+    transform: translateY(-3px);
+}
+
+/* Dashboard Titles */
+.dashboard-container h2 {
+    color: #0f95c2;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+
+/* Tables */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+.table th, .table td {
+    padding: 12px 15px;
+    border: 1px solid #e0e0e0;
+}
+.table th {
+    background: #1d81d9;
+    color: #fff;
+    text-align: left;
+}
+.table tr:nth-child(even) {
+    background: #f9fcff;
+}
+
+/* Alerts / Notifications */
+.alert {
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+.alert-success {
+    background: #d4edda;
+    color: #155724;
+}
+.alert-danger {
+    background: #f8d7da;
+    color: #721c24;
+}
+.alert-info {
+    background: #d1ecf1;
+    color: #0c5460;
+}
+
+/* ================================
+   Animations
+   ================================ */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
